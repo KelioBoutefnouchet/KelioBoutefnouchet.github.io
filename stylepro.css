@@ -1,0 +1,81 @@
+body {
+    background: rgb(218, 218, 218);
+    color: #2b00ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+    color: rgb(50, 50, 50);
+    font-size: 32px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    line-height: 15px;
+    font-size: 26;
+}
+
+
+.preg {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+
+.grid {
+    background: rgb(218, 218, 218);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 10px;
+    margin: 10px;
+
+}
+
+.grid a {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+.sticky {
+    position: sticky;
+    top: 32px;
+
+}
+
+hr {
+    width: 450px;
+    height: 2px;
+    align-items: start;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: none
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.main-color {
+    color: #2b00ff;
+}
