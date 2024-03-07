@@ -98,8 +98,11 @@ a:hover{
 }
 
 .main-color {
-    color: #0000ff;
-
+    display: inline-block;
+    width: 37px;
+    height: 36px;
+    background: url(photo/arrow.svg) no-repeat center 1px;
+    background-size: 24px 24px;
 }
 
 a.current{
@@ -152,6 +155,9 @@ a.current:hover{
 
 .para {
     color: rgba(0, 0, 0, 0.75);
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
     grid-column: 1;
+
 
 }
