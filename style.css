@@ -2,17 +2,21 @@ body {
     background: rgb(218, 218, 218);
     color: #2b00ff;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: url('photo/SVG/cursor.svg'), pointer;
 
+}
+
+a {
+    cursor: url('photo/SVG/cursorlink.svg'), pointer;
+}
+
+p {
+    cursor: url('photo/SVG/cursortext.svg'), pointer;
 }
 
 .grid-main {
     display: grid;
     grid-template-columns: auto 1fr;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 h1 {
@@ -21,6 +25,7 @@ h1 {
     font-weight: normal;
     margin-bottom: 20px;
     line-height: 15px;
+    cursor: url('photo/SVG/cursortext.svg'), pointer;
 }
 
 
@@ -63,7 +68,8 @@ h1 {
     z-index: 9999;
 }
 
-img, video {
+img,
+video {
     max-width: 100%;
     height: auto;
 }
@@ -84,22 +90,68 @@ hr {
 
 a {
     text-decoration: none;
-    color:  rgba(0, 0, 0, 0.75);
+    color: rgba(0, 0, 0, 0.75);
 }
 
-.main-color{
-    color: #2b00ff;
-    
+a:hover{
+    color: #0000ff;
 }
 
-.grid img, 
-.grid video{
+.main-color {
+    color: #0000ff;
+
+}
+
+a.current{
+    color: #0000ff;
+}
+
+a.current:hover{
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.grid img,
+.grid video {
     filter: grayscale(1);
 }
 
 .grid a:hover img,
-.grid a:hover video{
-    filter:grayscale(0) blur(1px);
+.grid a:hover video {
+    filter: grayscale(0) blur(1px);
     opacity: 0.5;
+
+}
+
+.gridabout{
+    margin-top: 16px;
+    margin-left: 10px;
+}
+
+.gridabout hr {
+    width: auto;
+    border: none;
+    grid-column: 1;
+}
+
+.subtitle{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.75);
+    grid-column: 1;
+
+}
+
+.date {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #0000ff;
+    grid-column: 1;
+
+}
+
+.para {
+    color: rgba(0, 0, 0, 0.75);
+    grid-column: 1;
 
 }
