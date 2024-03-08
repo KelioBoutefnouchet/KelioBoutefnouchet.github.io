@@ -56,6 +56,8 @@ h1 {
 
 }
 
+
+
 .grid a>* {
     grid-column: 1/-1;
     grid-row: 1/-1;
@@ -119,8 +121,8 @@ a.current:hover{
 
 .grid a:hover img,
 .grid a:hover video {
-    filter: grayscale(0) blur(1px);
-    opacity: 0.2;
+    filter: grayscale(1) blur(0px);
+    opacity: 0.1;
 
 }
 
