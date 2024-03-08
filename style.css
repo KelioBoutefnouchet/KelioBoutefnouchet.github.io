@@ -12,13 +12,11 @@ a {
 
 p {
     cursor: url('photo/SVG/cursortext.svg'), pointer;
-    margin left: 0;
-    margin bottom: 10px;
 }
 
 .grid-main {
     display: grid;
-    grid-template-columns: 30vw 1fr;
+    /* grid-template-columns: 30vw 1fr; */
 }
 
 h1 {
@@ -32,15 +30,12 @@ h1 {
     cursor: url('photo/SVG/cursortext.svg'), pointer;
 }
 
-@media screen { 
-    display: .grid;   
-}
 
 
 .grid {
     background: rgb(218, 218, 218);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     justify-items: stretch;
     align-items: stretch;
     gap: 10px;
@@ -163,4 +158,16 @@ a.current:hover{
     grid-column: 1;
 
 
+}
+
+@media (min-width:700px) {
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+
+@media (min-width:700px) {
+    .grid-main{
+        grid-template-columns: 30vw 1fr;
+    }  
 }
