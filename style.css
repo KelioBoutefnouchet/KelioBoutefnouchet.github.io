@@ -12,20 +12,28 @@ a {
 
 p {
     cursor: url('photo/SVG/cursortext.svg'), pointer;
+    margin left: 0;
+    margin bottom: 10px;
 }
 
 .grid-main {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 30vw 1fr;
 }
 
 h1 {
     color: rgb(50, 50, 50);
-    font-size: 32px;
+    font-size: 16px;
+    font-size:clamp(16px,4vw,32px);
     font-weight: normal;
-    margin-bottom: 20px;
-    line-height: 15px;
+    margin: 0;
+    margin-bottom: 0.1em;
+    line-height: 1;
     cursor: url('photo/SVG/cursortext.svg'), pointer;
+}
+
+@media screen { 
+    display: .grid;   
 }
 
 
@@ -76,12 +84,12 @@ video {
 
 .sticky {
     position: sticky;
-    top: 32px;
+    top: 18px;
 
 }
 
 hr {
-    width: 450px;
+    width: auto;
     height: 2px;
     align-items: start;
     background-color: rgba(0, 0, 0, 0.75);
@@ -97,12 +105,8 @@ a:hover{
     color: #0000ff;
 }
 
-.main-color {
-    display: inline-block;
-    width: 37px;
-    height: 36px;
-    background: url(photo/arrow.svg) no-repeat center 1px;
-    background-size: 24px 24px;
+.main-color{
+    color: #0000ff;
 }
 
 a.current{
@@ -121,12 +125,12 @@ a.current:hover{
 .grid a:hover img,
 .grid a:hover video {
     filter: grayscale(0) blur(1px);
-    opacity: 0.5;
+    opacity: 0.2;
 
 }
 
 .gridabout{
-    margin-top: 16px;
+    margin-top: 2.1px;
     margin-left: 10px;
 }
 
@@ -150,7 +154,6 @@ a.current:hover{
     font-style: italic;
     color: #0000ff;
     grid-column: 1;
-
 }
 
 .para {
