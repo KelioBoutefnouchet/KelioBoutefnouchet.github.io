@@ -15,7 +15,7 @@ p{
 }
 .grid-main {
     display: grid;
-    grid-template-columns: 30vw 1fr;
+    /* grid-template-columns: 30vw 1fr; */
 }
 
 a:hover{
@@ -29,8 +29,8 @@ a:hover{
 
 h1 {
     color: rgb(50, 50, 50);
-    font-size: 14px;
-    font-size:clamp(14px,3vw,32px);
+    font-size: 16px;
+    font-size:clamp(16px,2vw,32px);
     font-weight: normal;
     margin: 0;
     margin-bottom: 0.1em;
@@ -95,4 +95,16 @@ a {
 
 .main-color {
     color: #0000ff;
+}
+
+@media (min-width:700px) {
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }  
+}
+
+@media (min-width:700px) {
+    .grid-main{
+        grid-template-columns: 30vw 1fr;
+    }  
 }
